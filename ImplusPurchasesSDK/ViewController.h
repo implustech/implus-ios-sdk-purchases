@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <StoreKit/StoreKit.h>
+@import ImplusPurchases;
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong) NSArray<IMProduct *> * products;
 
 @end
-

@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28E229D8DBE49CF4FE7771DB /* Pods_ImplusPurchasesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856A990B9CF85EC6C3FB962E /* Pods_ImplusPurchasesSDK.framework */; };
+		5922251525127F35002724A8 /* ImplusPurchases.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5922251325127F30002724A8 /* ImplusPurchases.xcframework */; };
+		5922251625127F35002724A8 /* ImplusPurchases.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5922251325127F30002724A8 /* ImplusPurchases.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		5974F5E1251266C000351AB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5974F5E0251266C000351AB2 /* AppDelegate.m */; };
 		5974F5E4251266C000351AB2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5974F5E3251266C000351AB2 /* SceneDelegate.m */; };
 		5974F5E7251266C000351AB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5974F5E6251266C000351AB2 /* ViewController.m */; };
@@ -16,7 +19,23 @@
 		5974F5F2251266C200351AB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5974F5F1251266C200351AB2 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5922251725127F35002724A8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5922251625127F35002724A8 /* ImplusPurchases.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4F14950807B2135AB02149AD /* Pods-ImplusPurchasesSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplusPurchasesSDK.debug.xcconfig"; path = "Target Support Files/Pods-ImplusPurchasesSDK/Pods-ImplusPurchasesSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		5922251325127F30002724A8 /* ImplusPurchases.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ImplusPurchases.xcframework; sourceTree = "<group>"; };
 		5974F5DC251266C000351AB2 /* ImplusPurchasesSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImplusPurchasesSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5974F5DF251266C000351AB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5974F5E0251266C000351AB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +48,8 @@
 		5974F5EE251266C200351AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5974F5F0251266C200351AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5974F5F1251266C200351AB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		856A990B9CF85EC6C3FB962E /* Pods_ImplusPurchasesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImplusPurchasesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4E154E3417BBE700EC134F7 /* Pods-ImplusPurchasesSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplusPurchasesSDK.release.xcconfig"; path = "Target Support Files/Pods-ImplusPurchasesSDK/Pods-ImplusPurchasesSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +57,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5922251525127F35002724A8 /* ImplusPurchases.xcframework in Frameworks */,
+				28E229D8DBE49CF4FE7771DB /* Pods_ImplusPurchasesSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5922251225126828002724A8 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5922251325127F30002724A8 /* ImplusPurchases.xcframework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		5974F5D3251266C000351AB2 = {
 			isa = PBXGroup;
 			children = (
 				5974F5DE251266C000351AB2 /* ImplusPurchasesSDK */,
 				5974F5DD251266C000351AB2 /* Products */,
+				EF213373717884A16C603D28 /* Pods */,
+				8C7DF41DCA4EFFF0CB79FAA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +94,7 @@
 		5974F5DE251266C000351AB2 /* ImplusPurchasesSDK */ = {
 			isa = PBXGroup;
 			children = (
+				5922251225126828002724A8 /* Framework */,
 				5974F5DF251266C000351AB2 /* AppDelegate.h */,
 				5974F5E0251266C000351AB2 /* AppDelegate.m */,
 				5974F5E2251266C000351AB2 /* SceneDelegate.h */,
@@ -76,6 +110,23 @@
 			path = ImplusPurchasesSDK;
 			sourceTree = "<group>";
 		};
+		8C7DF41DCA4EFFF0CB79FAA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				856A990B9CF85EC6C3FB962E /* Pods_ImplusPurchasesSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF213373717884A16C603D28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F14950807B2135AB02149AD /* Pods-ImplusPurchasesSDK.debug.xcconfig */,
+				F4E154E3417BBE700EC134F7 /* Pods-ImplusPurchasesSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +134,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5974F5F5251266C200351AB2 /* Build configuration list for PBXNativeTarget "ImplusPurchasesSDK" */;
 			buildPhases = (
+				9576A25B0B2AB1481DC50BA3 /* [CP] Check Pods Manifest.lock */,
 				5974F5D8251266C000351AB2 /* Sources */,
 				5974F5D9251266C000351AB2 /* Frameworks */,
 				5974F5DA251266C000351AB2 /* Resources */,
+				5922251725127F35002724A8 /* Embed Frameworks */,
+				2A61891B6EED337E74A7ECFD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +194,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A61891B6EED337E74A7ECFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImplusPurchasesSDK/Pods-ImplusPurchasesSDK-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImplusPurchasesSDK/Pods-ImplusPurchasesSDK-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImplusPurchasesSDK/Pods-ImplusPurchasesSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9576A25B0B2AB1481DC50BA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImplusPurchasesSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5974F5D8251266C000351AB2 /* Sources */ = {
@@ -287,6 +383,7 @@
 		};
 		5974F5F6251266C200351AB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F14950807B2135AB02149AD /* Pods-ImplusPurchasesSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.implus.iospurchasessdk.ImplusPurchasesSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stopmotion.subtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +401,7 @@
 		};
 		5974F5F7251266C200351AB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4E154E3417BBE700EC134F7 /* Pods-ImplusPurchasesSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,7 +411,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.implus.iospurchasessdk.ImplusPurchasesSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stopmotion.subtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
