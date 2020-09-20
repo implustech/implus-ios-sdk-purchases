@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		5974F5EC251266C200351AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5974F5EB251266C200351AB2 /* Assets.xcassets */; };
 		5974F5EF251266C200351AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5974F5ED251266C200351AB2 /* LaunchScreen.storyboard */; };
 		5974F5F2251266C200351AB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5974F5F1251266C200351AB2 /* main.m */; };
-		59BC48AD251788720024CDC5 /* ImplusPurchases.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BC48AC251788720024CDC5 /* ImplusPurchases.xcframework */; };
+		59BC48BD251792470024CDC5 /* ImplusPurchases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BC48BC251792470024CDC5 /* ImplusPurchases.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 		5974F5EE251266C200351AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5974F5F0251266C200351AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5974F5F1251266C200351AB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		59BC48AC251788720024CDC5 /* ImplusPurchases.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ImplusPurchases.xcframework; sourceTree = "<group>"; };
+		59BC48BC251792470024CDC5 /* ImplusPurchases.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImplusPurchases.framework; sourceTree = "<group>"; };
 		856A990B9CF85EC6C3FB962E /* Pods_ImplusPurchasesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImplusPurchasesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E154E3417BBE700EC134F7 /* Pods-ImplusPurchasesSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplusPurchasesSDK.release.xcconfig"; path = "Target Support Files/Pods-ImplusPurchasesSDK/Pods-ImplusPurchasesSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59BC48AD251788720024CDC5 /* ImplusPurchases.xcframework in Frameworks */,
+				59BC48BD251792470024CDC5 /* ImplusPurchases.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +64,7 @@
 		5922251225126828002724A8 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				59BC48AC251788720024CDC5 /* ImplusPurchases.xcframework */,
+				59BC48BC251792470024CDC5 /* ImplusPurchases.framework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
