@@ -13,6 +13,9 @@
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
-@property (strong) NSArray<IMProduct *> * products;
+@property (strong) NSDictionary<NSString *,IMGroup *> * groups;
+@property (strong, nonatomic) IBOutlet UILabel *statusLabel;
+@property (strong) UIActivityIndicatorView *activityIndicator;
 
 @end
+

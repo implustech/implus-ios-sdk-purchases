@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -11,46 +11,65 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="z89-9G-HDw">
+                    <view key="view" contentMode="scaleToFill" id="cSd-sP-wBi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YV5-8q-YtL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="boc-nK-Cdh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="537.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KG-UO-smV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6o-Uq-ZI4">
                                 <rect key="frame" x="20.5" y="645.5" width="373" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Check sub status"/>
                                 <connections>
-                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WN8-oe-X5Z"/>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n08-Qe-eml"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftf-Pk-4vL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4C-an-vnv">
                                 <rect key="frame" x="20.5" y="691.5" width="373" height="30"/>
                                 <state key="normal" title="Restore"/>
                                 <connections>
-                                    <action selector="restoreAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lzI-zQ-Qel"/>
+                                    <action selector="restoreAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wmg-Gy-d57"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9W-um-zNK">
+                                <rect key="frame" x="186" y="597" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-1l-QQ0">
+                                <rect key="frame" x="20.5" y="737.5" width="373" height="30"/>
+                                <state key="normal" title="Invalidate cache"/>
+                                <connections>
+                                    <action selector="invalidateCacheAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ny4-3C-UJk"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ftf-Pk-4vL" firstAttribute="width" secondItem="7KG-UO-smV" secondAttribute="width" id="4td-FS-KdB"/>
-                            <constraint firstItem="ftf-Pk-4vL" firstAttribute="centerX" secondItem="Kdm-1Y-Oa1" secondAttribute="centerX" id="EPQ-Zj-0wa"/>
-                            <constraint firstItem="YV5-8q-YtL" firstAttribute="width" secondItem="z89-9G-HDw" secondAttribute="width" id="H8B-QU-0Mh"/>
-                            <constraint firstItem="7KG-UO-smV" firstAttribute="top" secondItem="YV5-8q-YtL" secondAttribute="bottom" constant="64" id="JYe-IQ-NTz"/>
-                            <constraint firstItem="ftf-Pk-4vL" firstAttribute="top" secondItem="7KG-UO-smV" secondAttribute="bottom" constant="16" id="SgN-rd-mNH"/>
-                            <constraint firstItem="YV5-8q-YtL" firstAttribute="centerX" secondItem="Kdm-1Y-Oa1" secondAttribute="centerX" id="WEX-0y-8YG"/>
-                            <constraint firstItem="YV5-8q-YtL" firstAttribute="top" secondItem="Kdm-1Y-Oa1" secondAttribute="top" id="aAV-7k-vBW"/>
-                            <constraint firstItem="7KG-UO-smV" firstAttribute="centerX" secondItem="Kdm-1Y-Oa1" secondAttribute="centerX" id="eme-FO-0wT"/>
-                            <constraint firstItem="7KG-UO-smV" firstAttribute="width" secondItem="z89-9G-HDw" secondAttribute="width" multiplier="0.9" id="lC7-Fr-9Uf"/>
-                            <constraint firstItem="YV5-8q-YtL" firstAttribute="height" secondItem="z89-9G-HDw" secondAttribute="height" multiplier="0.6" id="zS2-Io-Ylk"/>
+                            <constraint firstItem="J7C-1l-QQ0" firstAttribute="width" secondItem="p4C-an-vnv" secondAttribute="width" id="3Sv-bb-5tT"/>
+                            <constraint firstItem="boc-nK-Cdh" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="Bhw-59-0Sp"/>
+                            <constraint firstItem="R6o-Uq-ZI4" firstAttribute="width" secondItem="cSd-sP-wBi" secondAttribute="width" multiplier="0.9" id="Di4-2e-p9r"/>
+                            <constraint firstItem="boc-nK-Cdh" firstAttribute="width" secondItem="cSd-sP-wBi" secondAttribute="width" id="F6G-5Y-4cK"/>
+                            <constraint firstItem="p4C-an-vnv" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="H43-6N-AQV"/>
+                            <constraint firstItem="boc-nK-Cdh" firstAttribute="height" secondItem="cSd-sP-wBi" secondAttribute="height" multiplier="0.6" id="LKg-wP-qHg"/>
+                            <constraint firstItem="R6o-Uq-ZI4" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="Lf0-dW-cm1"/>
+                            <constraint firstItem="p4C-an-vnv" firstAttribute="width" secondItem="R6o-Uq-ZI4" secondAttribute="width" id="PPC-87-dN1"/>
+                            <constraint firstItem="boc-nK-Cdh" firstAttribute="top" secondItem="hut-v9-7lz" secondAttribute="top" id="S1i-QN-teo"/>
+                            <constraint firstItem="R6o-Uq-ZI4" firstAttribute="top" secondItem="R9W-um-zNK" secondAttribute="bottom" constant="27.5" id="SUJ-Ym-JgT"/>
+                            <constraint firstItem="J7C-1l-QQ0" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="UJb-ig-kAN"/>
+                            <constraint firstItem="R9W-um-zNK" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="UPf-aK-FEo"/>
+                            <constraint firstItem="p4C-an-vnv" firstAttribute="top" secondItem="R6o-Uq-ZI4" secondAttribute="bottom" constant="16" id="iys-e8-eOI"/>
+                            <constraint firstItem="R9W-um-zNK" firstAttribute="top" secondItem="boc-nK-Cdh" secondAttribute="bottom" constant="15.5" id="vYm-FT-9dx"/>
+                            <constraint firstItem="J7C-1l-QQ0" firstAttribute="top" secondItem="p4C-an-vnv" secondAttribute="bottom" constant="16" id="xgj-66-Bc9"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Kdm-1Y-Oa1"/>
+                        <viewLayoutGuide key="safeArea" id="hut-v9-7lz"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="YV5-8q-YtL" id="pAM-FO-wbo"/>
+                        <outlet property="statusLabel" destination="R9W-um-zNK" id="CWB-WV-Sth"/>
+                        <outlet property="tableView" destination="boc-nK-Cdh" id="w65-3D-IbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

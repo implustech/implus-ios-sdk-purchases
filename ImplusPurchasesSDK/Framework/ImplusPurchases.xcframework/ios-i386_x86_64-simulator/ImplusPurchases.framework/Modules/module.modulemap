@@ -1,0 +1,9 @@
+framework module ImplusPurchases {
+    umbrella header "ImplusPurchases.h"
+    export *
+}
+
+module ImplusPurchases.Swift {
+    header "ImplusPurchases-Swift.h"
+    requires objc
+}
