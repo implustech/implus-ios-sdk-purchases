@@ -40,4 +40,9 @@ Pod::Spec.new do |s|
       'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     }
   end
+
+  module ImplusPurchases.Swift {
+    header "ImplusPurchases-Swift.h"
+    requires objc
+}
   
