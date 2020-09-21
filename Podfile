@@ -7,5 +7,5 @@ target 'ImplusPurchasesSDK' do
   pod "gRPC-ProtoRPC",'~>1.31.0'
   pod "Protobuf",'~>3.13.0'
   # Pods for ImplusPurchasesSDK
-
+#  pod 'ImplusPurchases', :git => 'https://vilimas@bitbucket.org/vilimas/purchasestestsdk.git'
 end
