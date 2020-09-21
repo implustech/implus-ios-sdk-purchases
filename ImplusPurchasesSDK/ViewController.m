@@ -113,17 +113,17 @@
     [[IMPurchase shared] purchaseProduct:curArray.products[indexPath.row] completion:^(SKPaymentTransaction * _Nonnull transaction, NSDictionary<NSString *, IMEntitlement*>* _Nullable ent, NSError * _Nullable error, BOOL canceled) {
         if (canceled || error != nil) {
             NSLog(@"Canceled");
-            if (error != nil) {
-                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error then purching"
-                                                                               message:error.description
-                                               preferredStyle:UIAlertControllerStyleAlert];
-
-                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                   handler:^(UIAlertAction * action) {}];
-
-                [alert addAction:defaultAction];
-                [self presentViewController:alert animated:YES completion:nil];
-            }
+//            if (error != nil) {
+//                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error then purching"
+//                                                                               message:error.description
+//                                               preferredStyle:UIAlertControllerStyleAlert];
+//
+//                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+//                   handler:^(UIAlertAction * action) {}];
+//
+//                [alert addAction:defaultAction];
+//                [self presentViewController:alert animated:YES completion:nil];
+//            }
         } else {
             NSLog(@"Purchase completed");
             [self checkStatus];

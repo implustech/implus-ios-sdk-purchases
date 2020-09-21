@@ -1,6 +1,8 @@
 framework module ImplusPurchases {
-    umbrella header "ImplusPurchases.h"
-    export *
+  umbrella header "ImplusPurchases.h"
+
+  export *
+  module * { export * }
 }
 
 module ImplusPurchases.Swift {

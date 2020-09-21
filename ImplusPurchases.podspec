@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   
     s.ios.deployment_target = '9.0'
   
-    s.vendored_frameworks  = "ImplusPurchasesSDK/Framework/ImplusPurchases.xcframework"
+    s.vendored_frameworks  = "ImplusPurchasesSDK/Framework/ImplusPurchases.framework"
   
     s.dependency 'gRPC-ProtoRPC', '~>1.31.0'
     s.dependency 'Protobuf','~>3.13.0'
