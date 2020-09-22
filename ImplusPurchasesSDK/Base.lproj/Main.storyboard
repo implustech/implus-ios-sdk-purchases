@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,16 +19,16 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="boc-nK-Cdh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="537.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6o-Uq-ZI4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6o-Uq-ZI4">
                                 <rect key="frame" x="20.5" y="645.5" width="373" height="30"/>
                                 <state key="normal" title="Check sub status"/>
                                 <connections>
                                     <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n08-Qe-eml"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4C-an-vnv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4C-an-vnv">
                                 <rect key="frame" x="20.5" y="691.5" width="373" height="30"/>
                                 <state key="normal" title="Restore"/>
                                 <connections>
@@ -39,21 +41,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-1l-QQ0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7C-1l-QQ0">
                                 <rect key="frame" x="20.5" y="737.5" width="373" height="30"/>
                                 <state key="normal" title="Invalidate cache"/>
                                 <connections>
                                     <action selector="invalidateCacheAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ny4-3C-UJk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="J3I-QI-5vX">
+                                <rect key="frame" x="4" y="798" width="406" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="SKs-Te-aTS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hut-v9-7lz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="J7C-1l-QQ0" firstAttribute="width" secondItem="p4C-an-vnv" secondAttribute="width" id="3Sv-bb-5tT"/>
                             <constraint firstItem="boc-nK-Cdh" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="Bhw-59-0Sp"/>
                             <constraint firstItem="R6o-Uq-ZI4" firstAttribute="width" secondItem="cSd-sP-wBi" secondAttribute="width" multiplier="0.9" id="Di4-2e-p9r"/>
                             <constraint firstItem="boc-nK-Cdh" firstAttribute="width" secondItem="cSd-sP-wBi" secondAttribute="width" id="F6G-5Y-4cK"/>
                             <constraint firstItem="p4C-an-vnv" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="H43-6N-AQV"/>
+                            <constraint firstItem="hut-v9-7lz" firstAttribute="bottom" secondItem="J3I-QI-5vX" secondAttribute="bottom" constant="4" id="Kyw-vP-xre"/>
                             <constraint firstItem="boc-nK-Cdh" firstAttribute="height" secondItem="cSd-sP-wBi" secondAttribute="height" multiplier="0.6" id="LKg-wP-qHg"/>
                             <constraint firstItem="R6o-Uq-ZI4" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="Lf0-dW-cm1"/>
                             <constraint firstItem="p4C-an-vnv" firstAttribute="width" secondItem="R6o-Uq-ZI4" secondAttribute="width" id="PPC-87-dN1"/>
@@ -62,12 +75,14 @@
                             <constraint firstItem="J7C-1l-QQ0" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="UJb-ig-kAN"/>
                             <constraint firstItem="R9W-um-zNK" firstAttribute="centerX" secondItem="hut-v9-7lz" secondAttribute="centerX" id="UPf-aK-FEo"/>
                             <constraint firstItem="p4C-an-vnv" firstAttribute="top" secondItem="R6o-Uq-ZI4" secondAttribute="bottom" constant="16" id="iys-e8-eOI"/>
+                            <constraint firstItem="J3I-QI-5vX" firstAttribute="leading" secondItem="hut-v9-7lz" secondAttribute="leading" constant="4" id="j4P-pa-NH6"/>
+                            <constraint firstItem="hut-v9-7lz" firstAttribute="trailing" secondItem="J3I-QI-5vX" secondAttribute="trailing" constant="4" id="mLh-8S-XGJ"/>
                             <constraint firstItem="R9W-um-zNK" firstAttribute="top" secondItem="boc-nK-Cdh" secondAttribute="bottom" constant="15.5" id="vYm-FT-9dx"/>
                             <constraint firstItem="J7C-1l-QQ0" firstAttribute="top" secondItem="p4C-an-vnv" secondAttribute="bottom" constant="16" id="xgj-66-Bc9"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hut-v9-7lz"/>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="J3I-QI-5vX" id="3Xb-IF-XQv"/>
                         <outlet property="statusLabel" destination="R9W-um-zNK" id="CWB-WV-Sth"/>
                         <outlet property="tableView" destination="boc-nK-Cdh" id="w65-3D-IbY"/>
                     </connections>
@@ -77,4 +92,9 @@
             <point key="canvasLocation" x="139" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

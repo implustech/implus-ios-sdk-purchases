@@ -12,6 +12,7 @@
 
 @interface ViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UILabel *errorLabel;
 
 @property (strong) NSDictionary<NSString *,IMGroup *> * groups;
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;

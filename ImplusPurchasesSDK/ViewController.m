@@ -113,6 +113,7 @@
     [[IMPurchase shared] purchaseProduct:curArray.products[indexPath.row] completion:^(SKPaymentTransaction * _Nonnull transaction, NSDictionary<NSString *, IMEntitlement*>* _Nullable ent, NSError * _Nullable error, BOOL canceled) {
         if (canceled || error != nil) {
             NSLog(@"Canceled");
+            [self->_errorLabel setText:error.localizedDescription];
 //            if (error != nil) {
 //                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error then purching"
 //                                                                               message:error.description
