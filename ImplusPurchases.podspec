@@ -30,6 +30,11 @@ TODO: Add long description of the pod here.
 
   s.vendored_frameworks  = "ImplusPurchasesSDK/Framework/ImplusPurchases.framework"
 
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
   s.dependency 'gRPC-ProtoRPC', '~>1.31.0'
   s.dependency 'Protobuf','~>3.13.0'
 
