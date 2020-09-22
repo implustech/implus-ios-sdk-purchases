@@ -15,8 +15,7 @@
 		5974F5EC251266C200351AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5974F5EB251266C200351AB2 /* Assets.xcassets */; };
 		5974F5EF251266C200351AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5974F5ED251266C200351AB2 /* LaunchScreen.storyboard */; };
 		5974F5F2251266C200351AB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5974F5F1251266C200351AB2 /* main.m */; };
-		59BFDE59251A413600127A6F /* ImplusPurchases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59BFDE57251A410B00127A6F /* ImplusPurchases.framework */; };
-		59BFDE5A251A413600127A6F /* ImplusPurchases.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 59BFDE57251A410B00127A6F /* ImplusPurchases.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		59EB3487251A81F6008A1559 /* ImplusPurchases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59EB3486251A81F6008A1559 /* ImplusPurchases.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				59BFDE5A251A413600127A6F /* ImplusPurchases.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +45,7 @@
 		5974F5EE251266C200351AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5974F5F0251266C200351AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5974F5F1251266C200351AB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		59BFDE57251A410B00127A6F /* ImplusPurchases.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImplusPurchases.framework; sourceTree = "<group>"; };
+		59EB3486251A81F6008A1559 /* ImplusPurchases.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImplusPurchases.framework; sourceTree = "<group>"; };
 		856A990B9CF85EC6C3FB962E /* Pods_ImplusPurchasesSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImplusPurchasesSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E154E3417BBE700EC134F7 /* Pods-ImplusPurchasesSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplusPurchasesSDK.release.xcconfig"; path = "Target Support Files/Pods-ImplusPurchasesSDK/Pods-ImplusPurchasesSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,7 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25727FD9AD81A58FEC765F1E /* Pods_ImplusPurchasesSDK.framework in Frameworks */,
-				59BFDE59251A413600127A6F /* ImplusPurchases.framework in Frameworks */,
+				59EB3487251A81F6008A1559 /* ImplusPurchases.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +66,7 @@
 		5922251225126828002724A8 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				59BFDE57251A410B00127A6F /* ImplusPurchases.framework */,
+				59EB3486251A81F6008A1559 /* ImplusPurchases.framework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
