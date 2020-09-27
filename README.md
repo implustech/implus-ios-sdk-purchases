@@ -12,7 +12,7 @@ To integrate `ImplusPurchases` into your Xcode project using CocoaPods, specify 
 ```
 target 'MyApp' do
 	use_frameworks!
-  	pod 'ImplusAnalytics', '~> 1.1'
+  	pod 'ImplusPurchases', '~> 0.1'
 end
 ```
 
