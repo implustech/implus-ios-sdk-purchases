@@ -6,6 +6,11 @@ target 'ImplusPurchasesSDK' do
   use_frameworks!
   pod "gRPC-ProtoRPC",'~>1.31.0'
   pod "Protobuf",'~>3.13.0'
-  # Pods for ImplusPurchasesSDK
-#  pod 'ImplusPurchases', :git => 'https://vilimas@bitbucket.org/vilimas/purchasestestsdk.git'
+end
+
+target 'ImplusPurchasesExample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod "gRPC-ProtoRPC",'~>1.31.0'
+  pod "Protobuf",'~>3.13.0'
 end

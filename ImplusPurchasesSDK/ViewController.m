@@ -39,8 +39,6 @@
 }
 
 - (IBAction)buttonAction:(id)sender {
-//    BOOL *sandbox = [[IMPurchase shared] isSandbox];
-//    NSLog(@"%@",sandbox? @"YES":@"NO");
     [self checkStatus];
 }
 - (IBAction)invalidateCacheAction:(id)sender {
@@ -114,17 +112,6 @@
         if (canceled || error != nil) {
             NSLog(@"Canceled");
             [self->_errorLabel setText:error.localizedDescription];
-//            if (error != nil) {
-//                UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error then purching"
-//                                                                               message:error.description
-//                                               preferredStyle:UIAlertControllerStyleAlert];
-//
-//                UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-//                   handler:^(UIAlertAction * action) {}];
-//
-//                [alert addAction:defaultAction];
-//                [self presentViewController:alert animated:YES completion:nil];
-//            }
         } else {
             NSLog(@"Purchase completed");
             [self checkStatus];
