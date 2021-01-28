@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08DB2B1B610ACF166D59CE85 /* Pods_ImplusPurchasesExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160134491666221F43A243B6 /* Pods_ImplusPurchasesExample.framework */; };
 		25727FD9AD81A58FEC765F1E /* Pods_ImplusPurchasesSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856A990B9CF85EC6C3FB962E /* Pods_ImplusPurchasesSDK.framework */; };
-		55567F9625C18A1C009500F1 /* ImplusPurchases.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55567F9425C18A17009500F1 /* ImplusPurchases.xcframework */; };
-		55567F9725C18A1C009500F1 /* ImplusPurchases.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55567F9425C18A17009500F1 /* ImplusPurchases.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55567FD025C25B3E009500F1 /* ImplusPurchases.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55567FCE25C25B14009500F1 /* ImplusPurchases.xcframework */; };
+		55567FD125C25B3E009500F1 /* ImplusPurchases.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55567FCE25C25B14009500F1 /* ImplusPurchases.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		555681AA25C2AECD009500F1 /* ImplusPurchases.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556800625C260B1009500F1 /* ImplusPurchases.xcframework */; };
+		555681AB25C2AECD009500F1 /* ImplusPurchases.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5556800625C260B1009500F1 /* ImplusPurchases.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		555681AE25C2B0B5009500F1 /* Pods_ImplusPurchasesExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 160134491666221F43A243B6 /* Pods_ImplusPurchasesExample.framework */; };
+		555681AF25C2B0B5009500F1 /* Pods_ImplusPurchasesExample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 160134491666221F43A243B6 /* Pods_ImplusPurchasesExample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		59623A8F2521D66A000217BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59623A8E2521D66A000217BA /* AppDelegate.swift */; };
 		59623A912521D66A000217BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59623A902521D66A000217BA /* SceneDelegate.swift */; };
 		59623A932521D66A000217BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59623A922521D66A000217BA /* ViewController.swift */; };
@@ -33,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				55567F9725C18A1C009500F1 /* ImplusPurchases.xcframework in Embed Frameworks */,
+				555681AB25C2AECD009500F1 /* ImplusPurchases.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,6 +47,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				555681AF25C2B0B5009500F1 /* Pods_ImplusPurchasesExample.framework in Embed Frameworks */,
+				55567FD125C25B3E009500F1 /* ImplusPurchases.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +59,8 @@
 		160134491666221F43A243B6 /* Pods_ImplusPurchasesExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImplusPurchasesExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		383289BD5F123B1DDE758589 /* Pods-ImplusPurchasesExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplusPurchasesExample.debug.xcconfig"; path = "Target Support Files/Pods-ImplusPurchasesExample/Pods-ImplusPurchasesExample.debug.xcconfig"; sourceTree = "<group>"; };
 		4F14950807B2135AB02149AD /* Pods-ImplusPurchasesSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImplusPurchasesSDK.debug.xcconfig"; path = "Target Support Files/Pods-ImplusPurchasesSDK/Pods-ImplusPurchasesSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		55567F9425C18A17009500F1 /* ImplusPurchases.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ImplusPurchases.xcframework; sourceTree = "<group>"; };
+		55567FCE25C25B14009500F1 /* ImplusPurchases.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ImplusPurchases.xcframework; sourceTree = "<group>"; };
+		5556800625C260B1009500F1 /* ImplusPurchases.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ImplusPurchases.xcframework; sourceTree = "<group>"; };
 		59623A8C2521D66A000217BA /* ImplusPurchasesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImplusPurchasesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59623A8E2521D66A000217BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59623A902521D66A000217BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,7 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08DB2B1B610ACF166D59CE85 /* Pods_ImplusPurchasesExample.framework in Frameworks */,
+				555681AE25C2B0B5009500F1 /* Pods_ImplusPurchasesExample.framework in Frameworks */,
+				55567FD025C25B3E009500F1 /* ImplusPurchases.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55567F9625C18A1C009500F1 /* ImplusPurchases.xcframework in Frameworks */,
+				555681AA25C2AECD009500F1 /* ImplusPurchases.xcframework in Frameworks */,
 				25727FD9AD81A58FEC765F1E /* Pods_ImplusPurchasesSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,10 +108,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55567FCD25C25B14009500F1 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				55567FCE25C25B14009500F1 /* ImplusPurchases.xcframework */,
+			);
+			name = Framework;
+			path = ImplusPurchasesSDK/Framework;
+			sourceTree = SOURCE_ROOT;
+		};
 		5922251225126828002724A8 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				55567F9425C18A17009500F1 /* ImplusPurchases.xcframework */,
+				5556800625C260B1009500F1 /* ImplusPurchases.xcframework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -112,6 +128,7 @@
 		59623A8D2521D66A000217BA /* ImplusPurchasesExample */ = {
 			isa = PBXGroup;
 			children = (
+				55567FCD25C25B14009500F1 /* Framework */,
 				59623A8E2521D66A000217BA /* AppDelegate.swift */,
 				59623A902521D66A000217BA /* SceneDelegate.swift */,
 				59623A922521D66A000217BA /* ViewController.swift */,
@@ -440,7 +457,7 @@
 					"$(PROJECT_DIR)/ImplusPurchasesSDK/Framework",
 				);
 				INFOPLIST_FILE = ImplusPurchasesExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,7 +485,7 @@
 					"$(PROJECT_DIR)/ImplusPurchasesSDK/Framework",
 				);
 				INFOPLIST_FILE = ImplusPurchasesExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

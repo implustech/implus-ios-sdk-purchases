@@ -50,7 +50,11 @@
         NSLog(@"restored");
     }];
 }
-
+- (void)uploadUserInfo {
+    [[IMPurchase shared] uploadUserInfoWithUserId:@"xxx" completion:^(BOOL result, NSError * _Nullable error) {
+        
+    }];
+}
 -(void)checkStatus {
     [[IMPurchase shared] hasActiveSubscription:^(NSDictionary<NSString *,IMEntitlement *> * _Nullable entitlements, NSError * _Nullable error) {
         NSString * status = @"";
@@ -115,6 +119,7 @@
         } else {
             NSLog(@"Purchase completed");
             [self checkStatus];
+            [self uploadUserInfo];
         }
         [_activityIndicator setHidden:true];
         

@@ -12,7 +12,7 @@ To integrate `ImplusPurchases` into your Xcode project using CocoaPods, specify 
 ```
 target 'MyApp' do
 	use_frameworks!
-  	pod 'ImplusPurchases', '~> 0.1'
+  	pod 'ImplusPurchases'
 end
 ```
 
@@ -105,4 +105,22 @@ IMPurchase.shared.restorePurchases { (entitlement, error) in
 		}
 	}
 ```
+
+## UploadUserInfo
+To UploadUserInfo  call `uploadUserInfo` function. This method needs to pass in the parameter  `userId`
+
+> **NOTE** The latest iap api adds an interface `uploadUserInfo`, which is used to upload subscribed user data. Currently, this data is used for iap attribution.
+
+```swift
+IMPurchase.shared.uploadUserInfo(userId: "xxxx") { (result, error) in
+    
+}
+Objective-C
+
+[[IMPurchase shared] uploadUserInfoWithUserId:@"xxxx" completion:^(BOOL result, NSError * _Nullable error) {
+    
+}];
+```
+
+An error (if it occurs) and a boolean value, indicating the success or failure of the submitted data
 

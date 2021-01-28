@@ -6,7 +6,8 @@ target 'ImplusPurchasesSDK' do
   use_frameworks!
   pod "gRPC-ProtoRPC",'~>1.31.0'
   pod "Protobuf",'~>3.13.0'
-  pod 'ImplusAnalytics'
+  pod 'Founq_KeychainIDFA'
+
 end
 
 target 'ImplusPurchasesExample' do
@@ -14,5 +15,6 @@ target 'ImplusPurchasesExample' do
   use_frameworks!
   pod "gRPC-ProtoRPC",'~>1.31.0'
   pod "Protobuf",'~>3.13.0'
-  pod 'ImplusAnalytics'
+  pod 'Founq_KeychainIDFA'
+
 end

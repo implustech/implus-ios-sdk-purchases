@@ -37,7 +37,6 @@ TODO: Add long description of the pod here.
 
   s.dependency 'gRPC-ProtoRPC', '~>1.31.0'
   s.dependency 'Protobuf','~>3.13.0'
-  s.dependency 'ImplusAnalytics'
   
   s.pod_target_xcconfig = {
     # This is needed by all pods that depend on Protobuf:

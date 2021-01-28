@@ -75,7 +75,11 @@ class ViewController: UIViewController {
             self.statusLabel.text = "Subscription status: \(status)"
         }
     }
-    
+    func uploadUserInfo() {
+        IMPurchase.shared.uploadUserInfo(userId: "xxxx") { (result, error) in
+            
+        }
+    }
     func purchaseProduct(product: IMProduct) {
         activityIndicator.isHidden = false
         IMPurchase.shared.purchaseProduct(product) { (_, entitlement, error, isCanceled) in
@@ -86,6 +90,7 @@ class ViewController: UIViewController {
             } else {
                 print("Purchases completed")
                 self.checkStatus()
+                self.uploadUserInfo()
             }
             self.activityIndicator.isHidden = true
         }
