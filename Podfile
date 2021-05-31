@@ -4,9 +4,7 @@
 target 'ImplusPurchasesSDK' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod "gRPC-ProtoRPC",'~>1.31.0'
-  pod "Protobuf",'~>3.13.0'
-  pod 'Founq_KeychainIDFA'
+ pod 'gRPC-Swift', '~> 1.0.0-alpha.23'
 
 end
 

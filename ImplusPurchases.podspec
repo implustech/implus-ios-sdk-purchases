@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ImplusPurchases'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'iOS in-app purchase framework which will help implement purchases in your app in a few minutes.'
 
 # This description is used to generate tags and improve search results.
@@ -37,7 +37,8 @@ TODO: Add long description of the pod here.
 
   s.dependency 'gRPC-ProtoRPC', '~>1.31.0'
   s.dependency 'Protobuf','~>3.13.0'
-  
+  s.dependency 'Founq_KeychainIDFA'
+
   s.pod_target_xcconfig = {
     # This is needed by all pods that depend on Protobuf:
     'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS=1',
