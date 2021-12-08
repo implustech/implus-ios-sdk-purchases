@@ -24,17 +24,16 @@ public typealias EntitlementList = [Swift.String : ImplusPurchases.IMEntitlement
 public typealias ProductGroups = [Swift.String : ImplusPurchases.IMGroup]
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class IMPurchase : ObjectiveC.NSObject {
   @objc public static let shared: ImplusPurchases.IMPurchase
+  @objc public func configureInitSDKWithAppFlowPlist()
   @objc public func configure(_ appkey: Swift.String)
-  @objc public func configure(_ appkey: Swift.String, isDev: Swift.Bool)
   @objc public func configure(_ appKey: Swift.String, userId: Swift.String)
-  @objc public func configure(_ appKey: Swift.String, userId: Swift.String, isDev: Swift.Bool)
-  @objc public func configure(_ appKey: Swift.String, userId: Swift.String?, api_address: Swift.String?)
   @objc public func getProductGroups(_ completionHandler: ImplusPurchases.ProductGroupsRequestCompletionHandler?)
   @objc public func canMakePayments() -> Swift.Bool
   @objc public func purchaseProduct(_ product: ImplusPurchases.IMProduct, completion: @escaping ImplusPurchases.ProductPurchaseCompletionHandler)
   @objc public func hasActiveSubscription(_ completion: @escaping (ImplusPurchases.EntitlementList, Swift.Error?) -> Swift.Void)
   @objc public func restorePurchases(_ completion: @escaping (ImplusPurchases.EntitlementList, Swift.Error?) -> Swift.Void)
   @objc public func uploadUserInfo(userId: Swift.String?, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc public func uploadUserInfo(completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   @objc public func enableLog(_ isEnable: Swift.Bool)
   @objc public func isSandbox() -> Swift.Bool
   @objc public func invalidateCache()

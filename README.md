@@ -27,7 +27,12 @@ import ImplusPurchases
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool { 
     IMPurchase.shared.enableLog(true)
+    SDK: There are two initialization methods, please choose one of them to initialize
+    //Step 1: Initialize using the specified'appkey'
     IMPurchase.shared.configure("appkey") 
+    
+    //Step 2: Import the'appflow-app-token.plist' file and use the following method to initialize
+    //IMPurchase.shared.configureInitSDKWithAppFlowPlist
 }
 ```
 

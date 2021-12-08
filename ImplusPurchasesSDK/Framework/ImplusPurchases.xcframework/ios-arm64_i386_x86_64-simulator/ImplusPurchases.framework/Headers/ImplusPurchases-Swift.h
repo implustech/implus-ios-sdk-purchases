@@ -249,22 +249,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMPurchase *
 + (IMPurchase * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)configureInitSDKWithAppFlowPlist;
 - (void)configure:(NSString * _Nonnull)appkey;
-/// sdk initialization
-/// \param appkey Access_token of the platform
-///
-/// \param isDev The default is ‘false’, and it is set to ‘true’ when special testing and debugging are required.❗️Note: The release version must be set to ‘false’, otherwise it will cause data problems
-///
-- (void)configure:(NSString * _Nonnull)appkey isDev:(BOOL)isDev;
 - (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nonnull)userId;
-- (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nonnull)userId isDev:(BOOL)isDev;
-- (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nullable)userId api_address:(NSString * _Nullable)api_address;
 - (void)getProductGroups:(void (^ _Nullable)(NSDictionary<NSString *, IMGroup *> * _Nonnull, NSError * _Nullable))completionHandler;
 - (BOOL)canMakePayments SWIFT_WARN_UNUSED_RESULT;
 - (void)purchaseProduct:(IMProduct * _Nonnull)product completion:(void (^ _Nonnull)(SKPaymentTransaction * _Nonnull, NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable, BOOL))completion;
 - (void)hasActiveSubscription:(void (^ _Nonnull)(NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable))completion;
 - (void)restorePurchases:(void (^ _Nonnull)(NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable))completion;
 - (void)uploadUserInfoWithUserId:(NSString * _Nullable)userId completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)uploadUserInfoWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)enableLog:(BOOL)isEnable;
 - (BOOL)isSandbox SWIFT_WARN_UNUSED_RESULT;
 - (void)invalidateCache;
@@ -529,22 +523,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMPurchase *
 + (IMPurchase * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)configureInitSDKWithAppFlowPlist;
 - (void)configure:(NSString * _Nonnull)appkey;
-/// sdk initialization
-/// \param appkey Access_token of the platform
-///
-/// \param isDev The default is ‘false’, and it is set to ‘true’ when special testing and debugging are required.❗️Note: The release version must be set to ‘false’, otherwise it will cause data problems
-///
-- (void)configure:(NSString * _Nonnull)appkey isDev:(BOOL)isDev;
 - (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nonnull)userId;
-- (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nonnull)userId isDev:(BOOL)isDev;
-- (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nullable)userId api_address:(NSString * _Nullable)api_address;
 - (void)getProductGroups:(void (^ _Nullable)(NSDictionary<NSString *, IMGroup *> * _Nonnull, NSError * _Nullable))completionHandler;
 - (BOOL)canMakePayments SWIFT_WARN_UNUSED_RESULT;
 - (void)purchaseProduct:(IMProduct * _Nonnull)product completion:(void (^ _Nonnull)(SKPaymentTransaction * _Nonnull, NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable, BOOL))completion;
 - (void)hasActiveSubscription:(void (^ _Nonnull)(NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable))completion;
 - (void)restorePurchases:(void (^ _Nonnull)(NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable))completion;
 - (void)uploadUserInfoWithUserId:(NSString * _Nullable)userId completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)uploadUserInfoWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)enableLog:(BOOL)isEnable;
 - (BOOL)isSandbox SWIFT_WARN_UNUSED_RESULT;
 - (void)invalidateCache;
@@ -809,22 +797,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) IMPurchase *
 + (IMPurchase * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)configureInitSDKWithAppFlowPlist;
 - (void)configure:(NSString * _Nonnull)appkey;
-/// sdk initialization
-/// \param appkey Access_token of the platform
-///
-/// \param isDev The default is ‘false’, and it is set to ‘true’ when special testing and debugging are required.❗️Note: The release version must be set to ‘false’, otherwise it will cause data problems
-///
-- (void)configure:(NSString * _Nonnull)appkey isDev:(BOOL)isDev;
 - (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nonnull)userId;
-- (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nonnull)userId isDev:(BOOL)isDev;
-- (void)configure:(NSString * _Nonnull)appKey userId:(NSString * _Nullable)userId api_address:(NSString * _Nullable)api_address;
 - (void)getProductGroups:(void (^ _Nullable)(NSDictionary<NSString *, IMGroup *> * _Nonnull, NSError * _Nullable))completionHandler;
 - (BOOL)canMakePayments SWIFT_WARN_UNUSED_RESULT;
 - (void)purchaseProduct:(IMProduct * _Nonnull)product completion:(void (^ _Nonnull)(SKPaymentTransaction * _Nonnull, NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable, BOOL))completion;
 - (void)hasActiveSubscription:(void (^ _Nonnull)(NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable))completion;
 - (void)restorePurchases:(void (^ _Nonnull)(NSDictionary<NSString *, IMEntitlement *> * _Nonnull, NSError * _Nullable))completion;
 - (void)uploadUserInfoWithUserId:(NSString * _Nullable)userId completion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
+- (void)uploadUserInfoWithCompletion:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completion;
 - (void)enableLog:(BOOL)isEnable;
 - (BOOL)isSandbox SWIFT_WARN_UNUSED_RESULT;
 - (void)invalidateCache;
