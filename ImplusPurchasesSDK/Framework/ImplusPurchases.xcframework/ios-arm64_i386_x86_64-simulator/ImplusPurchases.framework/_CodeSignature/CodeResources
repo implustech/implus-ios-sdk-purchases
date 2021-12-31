@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Agj5SfnWaunIv4JpHZzmLZ3tfKQ=
+		pxXCZqfqBnwGJgEMpiZBCWu7iSI=
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Agj5SfnWaunIv4JpHZzmLZ3tfKQ=
+		pxXCZqfqBnwGJgEMpiZBCWu7iSI=
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fuTQ8ZiON+i5WPdg11ZKUxvd+T0=
+		kQbphvslN8sCuieE6nhXwbDwpW8=
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/i386.swiftmodule</key>
 		<data>
-		fuTQ8ZiON+i5WPdg11ZKUxvd+T0=
+		kQbphvslN8sCuieE6nhXwbDwpW8=
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3Xxk4sRAaPYjUaQv8gTEKbwLynY=
+		Zmmsu57NDKBbMOPZjeVQK63oX/g=
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/ImplusPurchases.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		3Xxk4sRAaPYjUaQv8gTEKbwLynY=
+		Zmmsu57NDKBbMOPZjeVQK63oX/g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Agj5SfnWaunIv4JpHZzmLZ3tfKQ=
+			pxXCZqfqBnwGJgEMpiZBCWu7iSI=
 			</data>
 			<key>hash2</key>
 			<data>
-			OcdPpQLHbSIymbg3PcRlj4U7sBcRS43R2VLrIlYER60=
+			AVr6Mbo4hV8AoYr8CWueo71oeFyJEN57rx+pRTN3Qi4=
 			</data>
 		</dict>
 		<key>Modules/ImplusPurchases.swiftmodule/arm64.swiftdoc</key>
@@ -206,11 +206,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Agj5SfnWaunIv4JpHZzmLZ3tfKQ=
+			pxXCZqfqBnwGJgEMpiZBCWu7iSI=
 			</data>
 			<key>hash2</key>
 			<data>
-			OcdPpQLHbSIymbg3PcRlj4U7sBcRS43R2VLrIlYER60=
+			AVr6Mbo4hV8AoYr8CWueo71oeFyJEN57rx+pRTN3Qi4=
 			</data>
 		</dict>
 		<key>Modules/ImplusPurchases.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -239,11 +239,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fuTQ8ZiON+i5WPdg11ZKUxvd+T0=
+			kQbphvslN8sCuieE6nhXwbDwpW8=
 			</data>
 			<key>hash2</key>
 			<data>
-			76zTbk/4obUs/EMfWVUTP1fZ6DIB1202oK/o0i+tFck=
+			MrnZQtaMKSKpgWXrAJX+54vwpH68VDblzKjED6jPUGo=
 			</data>
 		</dict>
 		<key>Modules/ImplusPurchases.swiftmodule/i386.swiftdoc</key>
@@ -272,11 +272,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fuTQ8ZiON+i5WPdg11ZKUxvd+T0=
+			kQbphvslN8sCuieE6nhXwbDwpW8=
 			</data>
 			<key>hash2</key>
 			<data>
-			76zTbk/4obUs/EMfWVUTP1fZ6DIB1202oK/o0i+tFck=
+			MrnZQtaMKSKpgWXrAJX+54vwpH68VDblzKjED6jPUGo=
 			</data>
 		</dict>
 		<key>Modules/ImplusPurchases.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -305,11 +305,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Xxk4sRAaPYjUaQv8gTEKbwLynY=
+			Zmmsu57NDKBbMOPZjeVQK63oX/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			U5WPBw/HWlqmirEF6uZkCny7vmaQJPAd+tzMjdrT1tk=
+			b/vWKnbhjYRxZBGtKwRUpimH8Px5lSvcro1oK1xgJvk=
 			</data>
 		</dict>
 		<key>Modules/ImplusPurchases.swiftmodule/x86_64.swiftdoc</key>
@@ -338,11 +338,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3Xxk4sRAaPYjUaQv8gTEKbwLynY=
+			Zmmsu57NDKBbMOPZjeVQK63oX/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			U5WPBw/HWlqmirEF6uZkCny7vmaQJPAd+tzMjdrT1tk=
+			b/vWKnbhjYRxZBGtKwRUpimH8Px5lSvcro1oK1xgJvk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
